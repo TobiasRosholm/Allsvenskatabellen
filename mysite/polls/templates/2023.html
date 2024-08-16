@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body bgcolor="cyan">
+
+<h1>Allsvenska tabellen 2023</h1>
+<h2>Omgångar:</h2>
+<div class="dropdown">
+    <div class="dropdown-options">
+      <h3>{{Omgång}}</h3>
+      <a href="http://127.0.0.1:8000/tabell/2023/1">1</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/2">2</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/3">3</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/4">4</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/5">5</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/6">6</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/7">7</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/8">8</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/9">9</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/10">10</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/11">11</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/12">12</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/13">13</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/14">14</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/15">15</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/16">16</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/17">17</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/18">18</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/19">19</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/20">20</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/21">21</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/22">22</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/23">23</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/24">24</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/25">25</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/26">26</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/27">27</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/28">28</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/29">29</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/30">30</a> <br>
+      <a href="http://127.0.0.1:8000/tabell/2023/Hemmatabell">Hemmatabell</a>
+      <a href="http://127.0.0.1:8000/tabell/2023/Bortatabell">Bortatabell</a>
+    </div>
+  </div>
+<p>&nbsp; &nbsp; &nbsp;  Lag &nbsp; [Poäng, &nbsp; Målskillnad]</p>
+<ol>{% for u in test %}  <li>{{u.0}} &nbsp; &nbsp;  &nbsp; {{u.1}} </li>{% endfor %}</ol>
+
+
+
+<div class="dropdown">
+  <div class="dropdown-options">
+    <a href="http://127.0.0.1:8000/tabell">Tillbaka</a> <br>
+    <h2>Matchsresultat för:</h2>
+    <h3>{{Lag}}</h3>
+    <ol>{% for u in Match %}  <li>{{u.0}} - {{u.1}} &nbsp; {{u.2}} - {{u.3}}</li> <br>{% endfor %}</ol>
+    <a href="http://127.0.0.1:8000/tabell/2023/MalmoFF">Malmö FF</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/IFElfsborg">IF Elfsborg</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/KalmarFF">Kalmar FF</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/BKHacken">BK Häcken</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/DjurgardenIF">Djurgården IF</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/HalmstadBK">Halmstad BK</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/DegerforsIF">Degerfors IF</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/VarbergBoIS">Varberg BoIS</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/IFKGoteborg">IFK Göteborg</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/IFKVarnamo">IFK Värnamo</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/IFKNorrkoping">IFK Norrköping</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/MjallbyAIF">Mjällby AIF</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/HammarbyIF">Hammarby IF</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/AIK">AIK</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/IFBrommapojkarna">IF Brommapojkarna</a> &nbsp;
+    <a href="http://127.0.0.1:8000/tabell/2023/IKSirius">IK Sirius</a> <br>
+    
+  </div>
+</div>
+
+</body>
+</html>
